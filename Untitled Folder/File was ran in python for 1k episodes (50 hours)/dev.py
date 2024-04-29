@@ -10,14 +10,14 @@ import random
 from tqdm import tqdm
 
 # Define constants and hyperparameters
-num_episodes = 10
+num_episodes = 1000
 max_steps_per_episode = 1000
-learning_rate = 0.1 # Use 0.0001 for 10000 episodes, 0.001 for 1000 episodes, and 0.01 for 100 episodes
+learning_rate = 0.001 # Use 0.0001 for 10000 episodes, 0.001 for 1000 episodes, and 0.01 for 100 episodes
 batch_size = 64
 gamma = 0.99  # Discount factor
 epsilon = 1.0  # Exploration rate
 epsilon_min = 0.01
-epsilon_decay = 0.95 # Use 0.995 for 10000 episodes, 0.98 for 100 episodes, 
+epsilon_decay = 0.995 # Use 0.995 for 1000 episodes, 0.98 for 100 episodes, 
 memory = deque(maxlen=25000)  # Experience replay buffer
 env_name = "ALE/Frogger-v5"
 
