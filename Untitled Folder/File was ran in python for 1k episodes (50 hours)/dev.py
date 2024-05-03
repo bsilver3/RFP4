@@ -17,7 +17,7 @@ batch_size = 64
 gamma = 0.99  # Discount factor
 epsilon = 1.0  # Exploration rate
 epsilon_min = 0.01
-epsilon_decay = 0.95 # Use 0.995 for 10000 episodes, 0.98 for 100 episodes, 
+epsilon_decay = 0.95 # Use 0.995 for 1000 episodes, 0.98 for 100 episodes, 
 memory = deque(maxlen=25000)  # Experience replay buffer
 env_name = "ALE/Frogger-v5"
 
@@ -91,4 +91,4 @@ for episode in tqdm(range(num_episodes), desc='Episode Progress', position=0):
 
 env.close()
 
-model.save_weights('mikhail.weights.h5')
+model.save_weights('mihail.weights.h5')
